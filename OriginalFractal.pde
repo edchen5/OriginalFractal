@@ -17,6 +17,7 @@ public void draw()
 {
 	fill(0, 0, 0, 50);
   	rect(300, 300, 605, 605);
+
 	noFill();
 	stroke(col1, col2, col3);
 	strokeWeight(0.25);
@@ -47,6 +48,7 @@ public void keyPressed()
 	col2 = (int)(Math.random() * 155 + 100);
 	col3 = (int)(Math.random() * 155 + 100);
 }
+
 public void myFractal1(int x, int y, int siz)
 {
 	ellipse(x, y, siz, siz);
