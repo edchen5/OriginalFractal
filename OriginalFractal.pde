@@ -22,7 +22,7 @@ public void draw()
 	stroke(col1, col2, col3);
 	strokeWeight(0.25);
 
-	if(change == false)
+	if(!change)
 		myFractal1(300, 300, 600);
 	else 
 		myFractal2(300, 300, 600);
@@ -39,10 +39,8 @@ public void mousePressed()
 
 public void keyPressed()
 {
-	if(change == false)
-		change = true;
-	else
-		change = false;
+	if(!change)
+		change = !change;
 
 	col1 = (int)(Math.random() * 155 + 100);
 	col2 = (int)(Math.random() * 155 + 100);
