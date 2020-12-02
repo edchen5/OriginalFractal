@@ -39,8 +39,7 @@ public void mousePressed()
 
 public void keyPressed()
 {
-	if(!change)
-		change = !change;
+	change = !change;
 
 	col1 = (int)(Math.random() * 155 + 100);
 	col2 = (int)(Math.random() * 155 + 100);
